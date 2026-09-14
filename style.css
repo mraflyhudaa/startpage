@@ -1,9 +1,14 @@
 :root {
-    --color-bg: #282828;
-    --color-fg: #EADBB2;
-    --color-link: #8F9191;
-    --color-link-visited: #668F8B;
-    --color-link-hover: #FA7921 ;
+    /* Noctalia v5 Dark palette */
+    --color-bg:           #000000; /* background */
+    --color-surface:      #1f1627; /* element.background */
+    --color-fg:           #f2f2f3; /* text */
+    --color-fg-muted:     #b3afb6; /* text.muted */
+    --color-link:         #b3afb6; /* text.muted — default links */
+    --color-link-visited: #6e6277; /* border / dimmed purple */
+    --color-link-hover:   #ad67e4; /* text.accent / primary violet */
+    --color-title:        #d65ccd; /* keyword / magenta */
+    --color-prompt:       #c593ec; /* ansi.cyan / soft lavender */
 }
 
 html, body {
@@ -72,6 +77,11 @@ html, body {
 
 .title {
   font-size: 20px;
+  color: var(--color-title);
+}
+
+.head p {
+  color: var(--color-prompt);
 }
 
 li {
